@@ -1,0 +1,41 @@
+@import "./colors.scss";
+@import "./mixins.scss";
+
+.contentWrapper {
+  @include flex($justifyContent: space-between);
+  & div {
+    color: $header-div-colors;
+  }
+}
+
+.warpperLanguageAndCurrency {
+  @include flex;
+}
+
+.language {
+  padding-right: 25px;
+}
+
+.wrapperTimeAndnumber {
+  @include flex;
+  gap: 20px;
+}
+
+.time {
+  @include flex;
+  gap: 10px;
+}
+
+.number {
+  @include flex;
+  gap: 10px;
+}
+
+.headerWrapper {
+  background-color: #fec740;
+  border: none;
+}
+
+.dedicatedText {
+  color: $span-text-color;
+}

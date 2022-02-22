@@ -1,0 +1,62 @@
+@import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
+.menuWrapper {
+  @include flex($justifyContent: space-between);
+  margin-top: 29px;
+}
+
+.headermenuWrapper {
+  background-color: $main-bg;
+}
+
+.menu {
+  @include flex;
+  gap: 25px;
+}
+
+.search {
+  @include flex;
+
+  & input {
+    padding: 16px 26px 13px 10px;
+    width: 408px;
+    border-radius: 20px 0px 0px 20px;
+    border: 1px solid #d2d2d2;
+  }
+
+  & svg {
+    border-radius: 0 10px 10px 0px;
+    font-size: 19px;
+    color: $white;
+  }
+}
+
+.searchIcon {
+  @include flex;
+  width: 95px;
+  height: 46px;
+  background-color: $color-header-menu-item-bg;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.personeCabinet {
+  @include headerCart;
+}
+
+.basket {
+  @include headerCart;
+  position: relative;
+}
+
+.producеСounter {
+  @include headerCart;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: none;
+  color: $white;
+  background-color: $color-header-menu-item-bg;
+  transform: translate(35%, -10%);
+}
